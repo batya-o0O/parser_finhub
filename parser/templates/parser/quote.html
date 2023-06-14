@@ -1,0 +1,37 @@
+{%  extends 'main.html'  %}
+
+
+
+{%  block content %}
+
+<h1>{{quotes.0.name}} </h1>
+
+
+<div>
+
+   
+    {%for quote in quotes %}
+            <div>
+        
+                
+                <h4>Obtained Time: {{quote.time}} </h4>
+                <h4> Current price: {{quote.current}} </h4>
+                <h4>Change: {{quote.change}} </h4>
+                <h4>Percent change: {{quote.percent_change}} </h4>
+                <h4>Highest price of the day: {{quote.hayday }} </h4>
+                <h4>Lowest price of the day: {{quote.lowday}} </h4>
+                <h4>Open price of the day: {{quote.openday}} </h4>
+                <h4>Previous close price: {{quote.prevclose}} </h4>
+                
+
+
+                <hr>
+            </div>
+
+        {%  endfor%}
+    
+
+</div>
+
+
+{%  endblock content  %}

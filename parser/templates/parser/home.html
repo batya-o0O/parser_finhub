@@ -1,0 +1,24 @@
+{%  extends 'main.html'  %}
+
+
+
+{%  block content %}
+<h1>Home Template</h1>
+
+<div>
+    {%for quote in quotes %}
+            <div>
+        
+                
+                <h4>{{quote.id}} --<a href="{%url 'quote' quote.name %}"> {{quote.name}} </a></h4>
+                
+                <hr>
+            </div>
+
+        {%  endfor%}
+    
+
+</div>
+
+
+{%  endblock content  %}

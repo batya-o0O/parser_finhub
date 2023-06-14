@@ -1,0 +1,26 @@
+{%  extends 'main.html'  %}
+
+
+
+{%  block content %}
+<h1>Home Template</h1>
+
+<div>
+
+    <div>
+        <h4>{{quotes}}</h4>
+        {%for k,v  in quotes.items %}
+            <div>
+                
+                <h4>{{k}}  {{v}}</h4>
+               
+               
+            </div>
+
+        {%  endfor%}
+    </div>
+
+</div>
+
+
+{%  endblock content  %}
