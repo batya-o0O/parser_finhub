@@ -124,9 +124,11 @@ The project runs in docker container so all requirements are written in requirem
     ```
 3.  Before running the docker container we should make migrations to our database to create table for celery worker results.
     ```sh 
-   docker-compose run django python manage.py migrate
+     docker-compose run django python manage.py migrate
     ```
-3. Run the docker container
+  
+
+4. Run the docker container
     ```sh 
    docker-compose up
     ```
